@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact King Strategic Solutions for general inquiries, consulting, workshops, career development, or writing coaching.">
+  <meta property="og:title" content="Contact | King Strategic Solutions">
+  <meta property="og:description" content="Contact King Strategic Solutions for general inquiries, consulting, workshops, career development, or writing coaching.">
+  <meta property="og:url" content="https://kdking.business/contact.html">
+  <title>Contact | King Strategic Solutions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-main"><span class="logo-icon">? &rarr; &starf;</span> KING STRATEGIC SOLUTIONS</div>
+        <div class="logo-tag">Think Systematically. Act Strategically.</div>
+      </a>
+      <button class="hamburger" aria-label="Toggle Navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="process.html">Our Process</a>
+        <a href="results.html">Results</a>
+        <a href="workshops.html">Workshops</a>
+        <a href="work-with-me.html" class="btn-primary">Work With Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container text-center">
+        <h1>Contact</h1>
+        <p class="subtitle">Ask a question. Request a proposal. Start a conversation.</p>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="bg-light">
+      <div class="container" style="padding-top: 60px; padding-bottom: 60px;">
+        <div style="background: var(--color-white); padding: 50px; border-radius: var(--border-radius-card); box-shadow: 0 4px 20px rgba(0,0,0,0.05); max-width: 800px; margin: 0 auto; border-top: 4px solid var(--color-purple-mid);">
+          <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="grid-2" style="gap: 20px;">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="_replyto" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="inquiry-type">What type of inquiry?</label>
+              <select id="inquiry-type" name="inquiry-type" required>
+                <option value="" disabled selected>Select one...</option>
+                <option value="General">General</option>
+                <option value="Consulting">Consulting</option>
+                <option value="Workshop">Workshop</option>
+                <option value="Career Development">Career Development</option>
+                <option value="Writing">Writing</option>
+                <option value="Press/Speaking">Press/Speaking</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            
+            <!-- Honeypot for Formspree spam prevention -->
+            <input type="text" name="_gotcha" style="display:none" />
+            
+            <button type="submit" class="btn-primary" style="width: 100%; font-size: 1rem; padding: 16px;">Send Message</button>
+            <div id="form-status" style="display: none; text-align: center; margin-top: 20px; font-weight: 600;"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Direct Info -->
+    <section class="bg-dark text-center" style="padding: 80px 24px;">
+      <div class="container">
+        <h2 style="font-family: var(--font-display); font-size: 2.2rem; margin-bottom: 20px;">Other Ways to Reach Us</h2>
+        <p style="font-size: 1.2rem; color: var(--color-purple-light); margin-bottom: 10px;">Email: <a href="mailto:[your email]" style="color: var(--color-white); text-decoration: underline;">[your email]</a></p>
+        
+        <div style="margin-top: 40px;">
+          <a href="work-with-me.html" style="font-size: 1.1rem; color: var(--color-purple-light); text-decoration: none; border-bottom: 1px dotted var(--color-purple-light); padding-bottom: 2px; transition: color 0.2s;">
+            Ready to book a call directly? &rarr; Schedule here
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h4><span class="logo-icon">? &rarr; &starf;</span> KING</h4>
+        <p class="logo-tag" style="margin-top: 5px; font-size: 1.5rem;">Think Systematically. Act Strategically.</p>
+        <p style="margin-top: 20px; opacity: 0.8;">Principal Consultant: KD King</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="process.html">Our Process</a></li>
+          <li><a href="results.html">Results</a></li>
+          <li><a href="workshops.html">Workshops</a></li>
+          <li><a href="work-with-me.html">Work With Me</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="contact.html">General Inquiries</a></li>
+          <li><a href="work-with-me.html">Book a Diagnostic Call</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 King Strategic Solutions | All Rights Reserved
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
